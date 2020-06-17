@@ -9,13 +9,19 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('home', '0004_remove_customtext_jgkjggh'),
+        ("home", "0004_remove_customtext_jgkjggh"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='customtext',
-            name='jgkjggh',
-            field=models.ForeignKey(blank=True, null=True, on_delete=django.db.models.deletion.CASCADE, related_name='customtext_jgkjggh', to=settings.AUTH_USER_MODEL),
+            model_name="customtext",
+            name="jgkjggh",
+            field=models.ForeignKey(
+                blank=True,
+                null=True,
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="customtext_jgkjggh",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]
