@@ -10,9 +10,9 @@ class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     jgkjggh = models.ForeignKey(
         "users.User",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="customtext_jgkjggh",
     )
 

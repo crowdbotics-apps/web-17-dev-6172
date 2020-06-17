@@ -9,9 +9,9 @@ class User(AbstractUser):
     name = models.CharField(null=True, blank=True, max_length=255,)
     ghvchgchg = models.OneToOneField(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_ghvchgchg",
     )
     hgfjhf = models.ManyToManyField(
@@ -19,9 +19,9 @@ class User(AbstractUser):
     )
     hjghfjgj = models.ForeignKey(
         "home.CustomText",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="user_hjghfjgj",
     )
 
